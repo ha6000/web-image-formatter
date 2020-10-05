@@ -1,0 +1,11 @@
+#loading {
+	user-select: none;
+}
+
+#loading img {
+	vertical-align: middle;
+}
+
+#loading span {
+	color: #9c9c9c
+}

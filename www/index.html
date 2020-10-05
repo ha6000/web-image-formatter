@@ -6,13 +6,18 @@
 	<script type="text/javascript" src="libs/jimp.min.js"></script>
 	<script type="text/javascript" src="libs/download.min.js"></script>
 	<script type="text/javascript" src="scripts/index.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
 </head>
 <body>
 	<a class="github-fork-ribbon" href="https://github.com/ha6000/web-image-formatter" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
 
 	<form id="fileForm" action="#">
-		<input id="fileInput" type="file" name="fileInput" accept="image/*" multiple required>
+		<div>
+			
+			<input id="fileInput" type="file" name="fileInput" accept="image/*" multiple required>
+
+		</div>
 
 		<div>
 			<input id="fileQualityToggle" type="checkbox" name="qualityToggle" checked>
@@ -26,6 +31,13 @@
 		</div>
 
 		<input type="submit" name="format" value="Format">
+
+		<div id="loading" style="display: none;">
+			
+			<img src="images/spinner.gif" alt="Loading..." width="30" height="30">
+			<span>Loading...</span>
+
+		</div>
 	</form>
 </body>
 </html>
