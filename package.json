@@ -1,0 +1,23 @@
+{
+  "name": "image-formatter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "http-server www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ha6000/web-image-formatter.git"
+  },
+  "keywords": [],
+  "author": "Harry Kruger <krugerh27@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ha6000/web-image-formatter/issues"
+  },
+  "homepage": "https://github.com/ha6000/web-image-formatter#readme",
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  }
+}
