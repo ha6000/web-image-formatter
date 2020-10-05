@@ -58,7 +58,7 @@ window.addEventListener('DOMContentLoaded', () => {
 				const images = content.map(c => c.image);
 				const size = images.map(image => biggestAxis(image)).reduce((a, b) => a + b) / images.length;
 
-				fileSize.value = parseInt(size.toFixed(1));
+				fileSize.value = Math.trunc(size) != size ? size.toFixed(1) : size;
 			});
 	});
 
